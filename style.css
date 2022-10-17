@@ -53,3 +53,59 @@ donc intégration des éléments et class css réutilisables sur le site */
   --space-84: 8.4rem;
   --space-96: 9.6rem;
 }
+body {
+  font-family: var(--base-font);
+}
+/* classes utilitaires globales */
+.main-title {
+  font-family: var(--title-font);
+  font-size: var(--text-7xl);
+  color: var(--main-white);
+  font-weight: 900;
+}
+.main-subtitle{
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-28);
+  color: var(--shade-white);
+  font-weight: 300;
+}
+.section-title{
+  font-family: var(--title-font);
+  font-size: var(--text-3xl);
+  margin-bottom: var(--space-6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  text-decoration-thickness: 20px;
+  text-underline-offset: 4px;
+}
+.section-title img {
+  width: var(--text-5xl);
+  margin-left: var(--space-8);
+}
+.section-subtitle{
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-72);
+  text-align: center;
+}
+.heading-h3{
+  font-size: var(--text-lg);
+  display: flex;
+  align-items: center;
+}
+.heading-h3 img{
+  width: var(--text-3xl);
+  margin-right: var(--space-6);
+}
+.heading-h4{
+  font-family: var(--title-font);
+  text-transform: uppercase;
+}
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+img {
+  width: 50px;
+}
