@@ -59,11 +59,11 @@ body {
 /* classes utilitaires globales */
 .main-title {
   font-family: var(--title-font);
-  font-size: var(--text-7xl);
-  color: var(--main-white);
+  font-size: var(--text-5xl);
+  color: var(--main-black);
   font-weight: 900;
 }
-.main-subtitle {
+.subtitle {
   font-size: var(--text-2xl);
   margin-bottom: var(--space-28);
   color: var(--shade-white);
@@ -133,15 +133,69 @@ nav a {
   text-decoration-style: solid;
   text-underline-offset: 4px;
 }
+/* animation couleur menu navigation */
 nav a:hover {
   background-color: var(--main-black);
   color: var(--main-yellow);
 }
+/* bouton seulement sur le petit écran */
 .nav-toggler {
   display: none;
 }
 
 /* boxTitles section */
+.main-title{
+  min-height: 450px;
+  padding-top: 200px;
+  background-color: var(--main-white);
+  background-size: cover;
+  background-position: 50% 20%;
+  position: relative;
+  text-align: center;
+}
+
+.boxTitle-link{
+  min-width: 15.5rem;
+  padding: var(--space-8) var(--space-12);
+  font-size: var(--text-base);
+  border-radius: 5px;
+  display: inline-flex;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--main-black);
+}
+.boxTitle-link span{
+  text-decoration: underline;
+  text-decoration-color: var(--main-black);
+  text-underline-offset: 4px;
+}
+.boxTitle-link img{
+  margin-left: var(--space-2);
+  width: var(--text-xl);
+}
+.boxTitle-link span,
+.boxTitle img{
+  pointer-events: none;
+}
+.boxTitle-link-1{
+  background-color: var(--main-yellow);
+}
+.boxTitle-link-1:hover{
+  background-color: var(--dark-yellow);
+}
+.boxTitle-link-2{
+  background-color: var(--main-white);
+  color: var(--main-black);
+  margin-left: var(--space-12);
+}
+.boxTitle-link-2{
+  background-color: var(--shade-white);
+}
+.push-down-boxTitle{
+  display: none;
+}
+
+
 
 img {
   width: 50px;
