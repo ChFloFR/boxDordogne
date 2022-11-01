@@ -7,7 +7,7 @@ const slideShowImages = document.querySelectorAll(
 // pour les boutons
 const fadeSlideDots = document.querySelectorAll(".fade-slide-dots . dot");
 // pour le changement au click sur le dot
-fadeSlideDots.forEach(dot => dot.addEventListener("click", fadeSlideShow);
+fadeSlideDots.forEach(dot => dot.addEventListener("click", fadeSlideShow));
 
 // on démarre à 1 (simplement par choix)
 let currentFadeIndex = 1;
@@ -22,7 +22,9 @@ function fadeSlideShow(e) {
     // soit j'ai cliqué sur un point et j'ai la main sur le changement d'image
     if(e){
         currentFadeIndex = e.target.getAttribute("data-fadeIndex");
+        // clear l'interval en court après l'évènement e = click aux dots
         clearInterval(fadeIntervalID);
+        // et relance
         fadeIntervalID = setInterval(fadeSlideShow, 3500);
     }
     // soit je laisse le slide par défaut
@@ -36,6 +38,6 @@ function fadeSlideShow(e) {
     slideShowImages[currentFadeIndex - 1].classList.add("active");
 //   pour les boutons
     fadeSlideDots[currentFadeIndex - 1].classList.add("active");
-}
+}}
 
-fadeIntervalID = window.setInterval(fadeSlideShow, 3500);
+fadeIntervalID = window.setInterval(fadeSlideShow, 3500)
