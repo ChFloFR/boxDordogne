@@ -194,9 +194,69 @@ nav a:hover {
 .push-down-boxTitle{
   display: none;
 }
-
-
-
-img {
-  width: 50px;
+/* ++++++++ VERFIFIER SI JE M EN SERS VRAIMENT */
+/* ABOUT SECTION */
+/* .about{
+  padding: 50px 20px 125px;
+  background: var(--main-white);
 }
+.about-content{
+  display: flex;
+}
+.about-text{
+  width: 60%;
+  margin-right: var(--space-96);
+}
+.about-text .heading-h3{
+  margin-bottom: var(--space-12);
+}
+.about-text p {
+  font-size: var(--text-base);
+  line-height: 1.4;
+}
+.about-text p:nth-child(2) {
+  margin-bottom: var(--space-44);
+}
+
+.about-slideshow{
+  width: 40%;
+}
+.slideshow-image-container{
+  margin: var(--space-12) 0;
+  display: grid;
+}
+.about-slideshow img{
+  grid-area: 1/1/2/2;
+  width: 100%;
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+.about-slideshow img.active{
+  opacity: 1;
+  z-index: 10;
+} */
+/* POINTS INDIQUANT LE NOMBRE D IMAGES */
+.dots{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dot{
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid var(--main-black);
+}
+.dot-active{
+  background: var(--main-black);
+}
+
+
+img{
+  width:50px;
+}
+
+
