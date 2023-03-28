@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="post" action="traitement.php">
+      <label for="nom">Votre nom :</label>
+      <input type="text" id="nom" name="nom" required /><br />
+
+      <label for="email">Votre Email :</label>
+      <input type="email" id="email" name="email" required /><br />
+
+      <label for="message">Votre message</label>
+      <textarea id="message" name="message" required></textarea><br />
+
+      <div class="g-recaptcha" data-sitekeys="SITE_KEY"></div>
+
+      <input type="submit" value="Envoyer" />
+    </form>
+  </body>
+</html>
